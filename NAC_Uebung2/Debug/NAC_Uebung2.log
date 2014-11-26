@@ -1,11 +1,8 @@
-﻿Der Buildvorgang wurde am 25.11.2014 11:30:44 gestartet.
+﻿Der Buildvorgang wurde am 26.11.2014 15:23:08 gestartet.
      1>Projekt "C:\Users\michi\Documents\Visual Studio 2013\Projects\NAC_Uebung2\NAC_Uebung2\NAC_Uebung2.vcxproj" auf Knoten "2", Build Ziel(e).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Funktion2D.cpp main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-         Funktion2D.cpp
-     1>c:\users\michi\documents\visual studio 2013\projects\nac_uebung2\nac_uebung2\funktion2d.cpp(34): warning C4244: 'Argument': Konvertierung von 'double' in 'float', möglicher Datenverlust
-         Code wird generiert...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\michi\Documents\Visual Studio 2013\Projects\NAC_Uebung2\Debug\NAC_Uebung2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\michi\Documents\Visual Studio 2013\Projects\NAC_Uebung2\Debug\NAC_Uebung2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\michi\Documents\Visual Studio 2013\Projects\NAC_Uebung2\Debug\NAC_Uebung2.lib" /MACHINE:X86 /PROFILE Debug\Funktion2D.obj
          Debug\Gerade2D.obj
@@ -20,4 +17,4 @@
 
 Build erfolgreich.
 
-Verstrichene Zeit 00:00:02.72
+Verstrichene Zeit 00:00:01.65

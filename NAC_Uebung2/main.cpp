@@ -72,10 +72,14 @@ int main(int argc, char * args[]){
 	std::cout << std::endl << std::endl << "Testat" << std::endl;
 	Funktion2D f;
 	
-	Vektor2D minima1 = Funktion2D::minimieren2D(f,Vektor2D(4,0),1,0.0000001,0.0000001);
-	minima1 = Funktion2D::gradient2D(f, Vektor2D(4, 0));
+	Vektor2D minima1 = Funktion2D::minimieren2D(f,Vektor2D(4,0),0.01,0.0001,0.0001);
 	minima1.ausgabe();
-	Funktion2D::gradient2D(f, minima1).ausgabe();
-	std::cout << f(minima1) << std::endl;
+	minima1 = Funktion2D::minimieren2D(f, Vektor2D(4, 1), 0.01, 0.0001, 0.0001);
+	minima1.ausgabe();
+	minima1 = Funktion2D::minimieren2D(f, Vektor2D(3, 1), 0.01, 0.0001, 0.0001);
+	minima1.ausgabe();
+	Funktion2D::gradient2D(f, Vektor2D(4, 0)).ausgabe();
+	std::cout << " f(4,0)=" << f(Vektor2D(4, 0)) << std::endl;
+	std::cout << " f(4.0001,0)=" << f(Vektor2D(4.0001, 0)) << std::endl;
 	return 0;
 }

@@ -7,7 +7,7 @@ Funktion2D::Funktion2D()
 }
 
 double Funktion2D::operator()(Vektor2D inVektor){
-	inVektor + Vektor2D(1, 0);
+	inVektor.addiere(Vektor2D(1, 0));
 	return -(sin(inVektor.betrag()) / inVektor.betrag());
 }
 
@@ -16,10 +16,10 @@ Funktion2D::~Funktion2D()
 }
 
 Vektor2D Funktion2D::gradient2D(Funktion2D f, Vektor2D p){
-	double h = 0.000001;
+	double h = 0.0001;
 	Vektor2D gradient(
 		(f(Vektor2D((p.get(0) + h), p.get(1))) - f(Vektor2D(p.get(0), p.get(1)))) / h,
-		(f(Vektor2D((p.get(0)), p.get(1) + h)) - f(Vektor2D(p.get(0), p.get(1)))) / h
+		(f(Vektor2D(p.get(0), p.get(1) + h)) - f(Vektor2D(p.get(0), p.get(1)))) / h
 	);
 	return gradient;
 }
